@@ -23,7 +23,7 @@ stages:
         backendAzureRmResourceGroupName: 'myResourceGroup'
         backendAzureRmStorageAccountName: 'avistorage888'
         backendAzureRmContainerName: 'avicnt'
-        backendAzureRmKey: 'tf.statefile'
+        backendAzureRmKey: 'dev.terraform.tfstate'
     - task: TerraformTask@5
       inputs:
         provider: 'azurerm'
