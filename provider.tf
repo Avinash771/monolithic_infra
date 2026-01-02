@@ -1,4 +1,11 @@
 terraform {
+  backend "azurerm" {
+  resource_group_name = "myResourceGroup"
+  storage_account_name = "avistorage888"
+  container_name = "avicnt"
+  key                  = "dev.terraform.tfstate"
+    
+  }
   required_providers {
     azurerm = {
       source = "hashicorp/azurerm"
