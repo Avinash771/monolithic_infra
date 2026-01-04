@@ -4,7 +4,7 @@ terraform {
   storage_account_name = "avistorage888"
   container_name = "avicnt"
   key                  = "dev.terraform.tfstate"
-    
+use_azuread_auth     = true    
   }
   required_providers {
     azurerm = {
